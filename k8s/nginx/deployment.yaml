@@ -18,6 +18,8 @@ spec:
 
           image: nginx:1.16-alpine
 
+          command: ["/bin/sh", "-c", "touch /usr/share/nginx/html/index.php; nginx -g 'daemon off;'"]
+
           ports:
             - containerPort: 80
 
